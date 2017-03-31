@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-12">
+        Use the form below to search for houses to buy. You can search by place-name, postcode, or click 'My location', to search in your current location!
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <input size="50" ng-model="searchCtrl.searchProp"/>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-1">
+        <button type="button" class="btn btn-default" ng-click="searchCtrl.forceSearch()">Go</button>
+    </div>
+    <div class="col-md-1">
+        <button type="button" class="btn btn-default" ng-click="searchCtrl.makeSearchByCurrentPosition()">My location</button>
+    </div>
+</div>
+<search-result ng-show="true"/>
+<recent-search ng-show="false"/>
+<error-search ng-show="false"/>

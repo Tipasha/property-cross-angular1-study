@@ -1,0 +1,14 @@
+<table>
+    <tr ng-repeat="place in placeListCtrl.places">
+        <td class="inline-block">
+            <div>
+
+            </div>
+            <img ng-src="{{place.thumb_url}}" />
+            <h6>{{place.title}}</h6>
+            <p>
+                {{place.price_formatted}}
+            </p>
+        </td>
+    </tr>
+</table>

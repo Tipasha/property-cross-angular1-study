@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-md-12">
+        Please select a location below:
+        <table>
+            <tr ng-repeat="location in searchCtrl.locations" ng-click="searchResultCtrl.onLocationClick(location)">
+                <td>{{location.title}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

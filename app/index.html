@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Property Cross</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/object-path/index.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+
+    <script src="scripts/main/main.module.js"></script>
+    <script src="scripts/main/main.component.js"></script>
+
+    <script src="scripts/search/search.module.js"></script>
+    <script src="scripts/search/search.component.js"></script>
+    <script src="scripts/search/search.controller.js"></script>
+    <script src="scripts/search/recent-search/recent-search.directive.js"></script>
+    <script src="scripts/search/search-result/search-result.directive.js"></script>
+    <script src="scripts/search/search-result/search-result.controller.js"></script>
+    <script src="scripts/search/error-search/error-search.directive.js"></script>
+
+    <script src="scripts/place-list/place-list.module.js"></script>
+    <script src="scripts/place-list/place-list.component.js"></script>
+    <script src="scripts/place-list/place-list.controller.js"></script>
+
+    <script src="scripts/core/core.module.js"></script>
+    <script src="scripts/core/place/place.module.js"></script>
+    <script src="scripts/core/place/place.service.js"></script>
+  </head>
+  <body>
+
+    <div ng-view/>
+
+  </body>
+</html>
